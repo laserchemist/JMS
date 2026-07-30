@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>BCCE Summer 2026</title>
+<title>Data-Driven Science in Chemistry — BCCE Summer 2026</title>
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/theme/black.css" id="theme">
@@ -38,24 +38,130 @@
     color: #ddd;
     font-size: 14px;
   }
-  /* simple title/cover slide */
+  /* cover / title slide */
+  :root {
+    --navy: #0c2438;
+    --navy-2: #143a54;
+    --teal: #2fb8ae;
+    --gold: #c9a24b;
+    --paper: #f6f4ef;
+  }
+  .reveal .slides section.cover-slide {
+    height: 100%;
+    padding: 0;
+  }
   .cover {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     height: 100%;
-    text-align: center;
-    color: #f2f2f2;
+    width: 100%;
+    margin: 0 auto;
+    text-align: left;
+    color: #26313a;
+    background: var(--paper);
+    box-sizing: border-box;
+    overflow: hidden;
   }
-  .cover h1 {
-    font-size: 2.2em;
-    margin-bottom: 0.3em;
+  .cover.scroll .cover-body {
+    overflow-y: auto;
   }
-  .cover p {
-    color: #9ad6df;
-    font-size: 0.9em;
-    letter-spacing: 0.04em;
+  .cover-bar {
+    background: linear-gradient(100deg, var(--navy) 0%, var(--navy-2) 65%, #1c4f66 100%);
+    padding: 0.85em 3.5% 0.9em 3.5%;
+    border-bottom: 4px solid var(--gold);
+    flex: 0 0 auto;
+  }
+  .cover-bar .eyebrow {
+    color: var(--teal);
+    font-size: 0.42em;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    margin: 0 0 0.5em 0;
+    font-weight: 600;
+  }
+  .cover-bar h1 {
+    font-size: 1.55em;
+    line-height: 1.28;
+    margin: 0;
+    color: #fdfdfb;
+    font-weight: 700;
+  }
+  .cover-body {
+    flex: 1 1 auto;
+    padding: 1.1em 3.5% 1.3em 3.5%;
+  }
+  .cover .meta {
+    display: flex;
+    gap: 2.2em;
+    flex-wrap: wrap;
+    margin-bottom: 1em;
+  }
+  .cover .meta .chip {
+    border-left: 3px solid var(--teal);
+    padding-left: 0.7em;
+  }
+  .cover .meta .label {
+    color: #1c4f66;
+    font-size: 0.5em;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    margin-bottom: 0.25em;
+    font-weight: 700;
+  }
+  .cover .meta .value {
+    font-size: 0.68em;
+    color: #26313a;
+    font-weight: 600;
+  }
+  .cover .meta .value .sub {
+    display: block;
+    color: #6b6b63;
+    font-size: 0.82em;
+    font-weight: 400;
+  }
+  .cover .abstract-label {
+    color: var(--navy);
+    font-size: 0.48em;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    margin: 0.9em 0 0.5em 0;
+    font-weight: 700;
+    border-bottom: 1px solid #d8d3c4;
+    padding-bottom: 0.4em;
+  }
+  .cover .abstract {
+    font-size: 0.5em;
+    line-height: 1.6;
+    color: #3c4650;
+    max-width: 1420px;
+  }
+  .cover .abstract p {
+    margin: 0 0 1em 0;
+  }
+  .cover .conference {
+    margin-top: 1.3em;
+    padding: 0.8em 1em;
+    background: #eef0e9;
+    border-radius: 4px;
+    border-left: 3px solid var(--gold);
+    font-size: 0.52em;
+    color: #3c4650;
+    display: inline-block;
+  }
+  .cover .conference a {
+    color: #1c4f66;
+    font-weight: 700;
+    text-decoration: none;
+    border-bottom: 1px solid var(--teal);
+  }
+  .cover .conference a:hover {
+    color: var(--teal);
+  }
+  .cover .hint {
+    margin-top: 1em;
+    color: #8a8a80;
+    font-size: 0.38em;
+    letter-spacing: 0.05em;
     text-transform: uppercase;
   }
 </style>
@@ -63,11 +169,40 @@
 <body>
 <div class="reveal">
   <div class="slides">
-    <section>
-      <div class="cover">
-        <h1>BCCE Summer 2026</h1>
-        <p>Use → / ← or swipe to browse &middot; press F for fullscreen &middot; press S for speaker notes</p>
+    <section class="cover-slide">
+      <div class="cover scroll">
+        <div class="cover-bar">
+          <div class="eyebrow">BCCE 2026 &middot; University of Wisconsin&ndash;Madison</div>
+          <h1>Data-Driven Science in Chemistry: AI, Machine Learning, and Enhanced Data and Scientific Intuition</h1>
+        </div>
+
+        <div class="cover-body">
+          <div class="meta">
+            <div class="chip">
+              <div class="label">Presented by</div>
+              <div class="value">Jonathan Smith<span class="sub">Temple University</span></div>
+            </div>
+            <div class="chip">
+              <div class="label">Authors</div>
+              <div class="value">Jonathan Smith (Temple University)</div>
+            </div>
+          </div>
+
+          <div class="abstract-label">Abstract</div>
+          <div class="abstract">
+            <p>We developed a data-driven curriculum rooted in a foundational course, Elements of Data Science, which builds a core algorithmic approach to statistical data analysis and visualization using scaffolded Python coding in web-based Jupyter notebooks. This 3-credit course is a component of our Medicinal Chemistry major and available for all Chemistry majors. Diverse chemical and scientific data sets are used as the focus of analysis. We emphasize simulation of distributions to test hypotheses and develop confidence intervals. Chemical foci include ideal gas modeling, alcohol boiling point prediction, cheminformatics, SMILES string molecular representations, and mapping functional groups to properties including pKa and overall solvent accessible area. Probability plays a core role in this curriculum, beginning with simulated coin tosses and a Schr&ouml;dinger&rsquo;s cat exercise building into simple quantum probability computations. AI is introduced synchronous with the core probability topic and coupled to the text as data component of the course. The probability of word pairs trained using student contributed sentences generate responses to student prompts. Furthermore, we emphasize the concept of &lsquo;temperature&rsquo; and entropy in producing more varied outputs, while emphasizing that the typical AI &lsquo;temperature&rsquo; prioritizes reproducible and occasionally incorrect top answers with the highest probability. We find that engagement as measured through algorithmic tracking of visits with course assistants correlates with improved course scores.</p>
+            <p>Statistical data analysis, error analysis, and computation are key to our Physical Chemistry Laboratory sequence. We leveraged our data science fundamentals course to extend our traditional analysis and computation. Python-based Jupyter Notebooks provide the ability to couple background theory and links to text and scientific literature within markdown in the notebook. Furthermore, the notebooks embed state of the art Python modules for statistical analysis and visualization and computational chemistry using key packages including PSI4 and the Hylleraas Software Platform as well as the RDKit open-source cheminformatics platform.</p>
+          </div>
+
+          <div class="conference">
+            2026 Biennial Conference on Chemical Education (BCCE) &middot; July 26&ndash;30, 2026 &middot; University of Wisconsin&ndash;Madison<br>
+            <a href="https://conferences.union.wisc.edu/bcce2026/" target="_blank" rel="noopener">conferences.union.wisc.edu/bcce2026</a>
+          </div>
+
+          <p class="hint">Use &rarr; / &larr; or swipe to browse &middot; press F for fullscreen</p>
+        </div>
       </div>
+
     </section>
     <section data-background-color="#000">
       <img class="slide-img" src="slides/slide-01.jpg" alt="Slide 1" loading="lazy">
