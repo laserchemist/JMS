@@ -66,6 +66,7 @@ html, body { height: 100%; background: #111; color: var(--ink); }
 .bar .eyebrow { color: var(--teal); font-size: 14px; letter-spacing: .14em; text-transform: uppercase; font-weight: 700; margin: 0 0 4px; }
 .bar h2 { font-family: var(--f-display); font-weight: 600; font-size: 40px; line-height: 1.1; margin: 0; color: #fdfdfb; text-wrap: balance; letter-spacing: .005em; }
 .body { flex: 1 1 auto; padding: 22px 44px 26px; min-height: 0; display: flex; flex-direction: column; gap: 16px; }
+.context { margin: 0; font-size: 16.5px; color: var(--ink-2); background: var(--wash); border-left: 3px solid var(--gold); border-radius: 4px; padding: 8px 14px; align-self: flex-start; max-width: 80ch; }
 .lede { font-size: 22px; color: var(--ink-2); max-width: 64ch; margin: 0; }
 .cols { display: grid; gap: 28px; flex: 1 1 auto; min-height: 0; }
 .cols > * { min-width: 0; }
@@ -326,8 +327,7 @@ svg text { font-family: var(--f-body); }
     <div class="body cover-body">
       <div class="cover-art" role="img" aria-label="Nordic Knowledge mascot: a golden retriever on skis beside a snowman"></div>
       <div class="meta">
-        <div class="chip"><div class="k">Presented by</div><div class="v">Jonathan Smith<span>Temple University</span></div></div>
-        <div class="chip"><div class="k">Example deployment</div><div class="v">Introductory Python data science<span>first-year undergraduate course</span></div></div>
+        <div class="chip"><div class="v">Professor Jonathan Smith<span>Temple University &middot; jonathan.m.smith@temple.edu</span></div></div>
         <div class="chip"><div class="k">Platform</div><div class="v">Flask &middot; Cloud SQL &middot; Claude API<span>Hosted on Google App Engine</span></div></div>
       </div>
       <div class="abs-label">Abstract</div>
@@ -345,6 +345,7 @@ svg text { font-family: var(--f-body); }
     <div class="bar"><div class="eyebrow">Why build this</div><h2>The question that disappears</h2></div>
     <div class="body">
       <p class="lede">A first-year student stuck on a bootstrap lab at 11&nbsp;pm will ask someone. Where that question goes decides who learns from it.</p>
+      <p class="context">Nordic Knowledge works with any course. The examples in this deck come from one deployment: a Python-based introductory data science course for first-year undergraduates.</p>
       <div class="versus">
         <div class="h"></div><div class="h">Private chatbot</div><div class="h nk">Nordic Knowledge</div>
         <div class="rowk">Answer source</div><div>General web knowledge, any notation, any method</div><div class="nkc">The course&rsquo;s own notebooks, slides, syllabus and data</div>
